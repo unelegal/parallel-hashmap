@@ -20,7 +20,7 @@ include(CMakePackageConfigHelpers)
 include(helpers)
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}")
 
-add_library(${PROJECT_NAME} INTERFACE ${PHMAP_HEADERS})
+add_library(${PROJECT_NAME} INTERFACE)
 
 target_include_directories(
      ${PROJECT_NAME} INTERFACE
