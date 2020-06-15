@@ -5,6 +5,7 @@ list (APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(DetectVersion)
 
 cmake_policy(SET CMP0048 NEW)                    ## set VERSION as documented by the project() command.
+cmake_policy(SET CMP0076 NEW)                    ## Make target_sources() paths absolute
 set(CMAKE_CXX_STANDARD 11)                       ## compile with C++11 support
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
